@@ -1,0 +1,16 @@
+.logo {
+  color: $logo-color;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  .logo__text {
+    color: $accent-color;
+  }
+}
+
+.logo--footer {
+  color: $primary-white-color;
+}

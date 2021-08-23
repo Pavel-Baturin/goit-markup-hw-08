@@ -1,0 +1,33 @@
+.advantages {
+  display: flex;
+
+  .advantages__title {
+    margin-bottom: 10px;
+
+    color: $title-text-color;
+
+    line-height: 1.14;
+  }
+
+  .advantages__box {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    border-radius: 4px;
+    background-color: $button-background-color;
+  }
+
+  .advantages__icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.advantages__item {
+  margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
