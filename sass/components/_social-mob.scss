@@ -1,0 +1,17 @@
+.social-mob {
+    display: flex;
+}
+
+.social-mob__link {
+  padding: 0px 10px;
+  border-right: 1px solid $title-text-color;
+  color: $accent-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.social-mob__link--last {
+    border-right: none;
+}

@@ -19,26 +19,99 @@
     <header class="page-header">
         <div class="container page-header__box">
             <a href="./index.html" class="logo"><span class="logo logo__text">Web</span>Studio</a>
-            <nav class="nav"> 
-                <ul  class="nav__list">
-                    <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Студия</a></li>
-                    <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-                </ul>
-            </nav>
-            
-            <ul class="contacts">
-                <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
-                    <svg class="contacts__icon contacts__icon--mail">
-                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            <button 
+                type="button" 
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+                <svg 
+                    width="40"
+                    height="40"
+                    aria-label="Переключатель мобильного меню"
+                >
+                    <use class="menu-toggle__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="menu-nav">
+                <nav class="nav"> 
+                    <ul  class="nav__list">
+                        <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Студия</a></li>
+                        <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                    
+                <ul class="contacts">
+                    <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
+                        <svg class="contacts__icon contacts__icon--mail">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
+                    <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
+                        <svg class="contacts__icon contacts__icon--tel">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
+                    </ul>
+            </div>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button 
+                type="button" 
+                class="menu-toggle js-close-menu"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+                    <svg 
+                        width="40"
+                        height="40"
+                        aria-label="Переключатель мобильного меню"
+                    >
+                        <use class="menu-toggle__icon-close" href="./images/symbol-defs.svg#icon-close"></use>
                     </svg>
-                    info@devstudio.com</a></li>
-                <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
-                    <svg class="contacts__icon contacts__icon--tel">
-                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a></li>
-            </ul>
+                </button>   
+                <div class="mobile-menu">
+                    <nav class="mobile-menu__nav"> 
+                        <ul  class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">Студия</a></li>
+                            <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <ul class="contacts">
+                        <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link contacts__link--tel">
+                            <svg class="contacts__icon contacts__icon--tel">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a></li>
+                        <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
+                            <svg class="contacts__icon contacts__icon--mail">
+                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="social-mob">
+                    
+                        <li class="social-mob__item">
+                            <a href="#" class="social-mob__link">Instagram</a>
+                        </li>
+                    
+                        <li class="social-mob__item">
+                            <a href="#" class="social-mob__link">Twitter</a>
+                        </li>
+                    
+                        <li class="social-mob__item">
+                            <a href="#" class="social-mob__link">Facebook</a>
+                        </li>
+                    
+                        <li class="social-mob__item">
+                            <a href="#" class="social-mob__link social-mob__link--last">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
         </div>
     </header>
 
@@ -123,7 +196,7 @@
                             </svg>
                         </div>
                         <h3 class="advantages__title">Внимание к деталям</h3>
-                        <p>
+                        <p class="advantages__paragraph">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
@@ -135,7 +208,7 @@
                             </svg>
                         </div>
                         <h3 class="advantages__title">Пунктуальность</h3>
-                        <p>
+                        <p class="advantages__paragraph">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой
                         </p>
                     </li>
@@ -147,7 +220,7 @@
                             </svg>
                         </div>
                         <h3 class="advantages__title">Планирование</h3>
-                        <p>
+                        <p class="advantages__paragraph">
                             Равным образом консультация с широким активом в значительной степени обуславливает
                         </p>
                     </li>
@@ -174,15 +247,39 @@
 
                 <ul class="services">
                     <li class="services__item">
-                        <img src="./images/box1.jpg" alt="Программирование за компьютером" width="370" />
+                        <img
+                          srcset="
+                            ./images/box1-1200.jpg 1x,
+                            ./images/box1-1200@2x.jpg 2x
+                            " 
+                          src="./images/box1-1200.jpg" 
+                          alt="Программирование за компьютером" 
+                     
+                        />
                         <h3 class="services__title">Десктопные приложения</h3>
                     </li>
                     <li class="services__item">
-                        <img src="./images/box2.jpg" alt="Разработка мобильного приложения" width="370" />
+                        <img
+                          srcset="
+                            ./images/box2-1200.jpg 1x,
+                            ./images/box2-1200@2x.jpg 2x
+                            " 
+                          src="./images/box2-1200.jpg" 
+                          alt="Разработка мобильного приложения" 
+                           
+                        />
                         <h3 class="services__title">Мобильные приложения</h3>
                     </li>
                     <li class="services__item">
-                        <img src="./images/box3.jpg" alt="Работа с веб дизайном на планшете" width="370" />
+                        <img
+                          srcset="
+                            ./images/box3-1200.jpg 1x,
+                            ./images/box3-1200@2x.jpg 2x
+                            " 
+                          src="./images/box3-1200.jpg" 
+                          alt="Работа с веб дизайном на планшете" 
+                           
+                        />
                         <h3 class="services__title">Дизайнерские решения</h3>
                     </li>
                 </ul>
@@ -197,7 +294,33 @@
                 <ul class="team">
                     <li class="card-team">
                         <div class="img">
-                            <img src="images/img1.jpg" alt="Игорь Демьяненко продакт-дизайнер" width="270">
+                            <img class="img-450"
+                              srcset="
+                                ./images/team1-480.jpg 1x,
+                                ./images/team1-480@2x.jpg 2x
+                                " 
+                              src="./images/team1-480.jpg" 
+                              alt="Игорь Демьяненко продакт-дизайнер" 
+                              width="450"
+                            />
+                            <img class="img-768"
+                              srcset="
+                                ./images/team1-768.jpg 1x,
+                                ./images/team1-768@2x.jpg 2x
+                                " 
+                              src="./images/team1-768.jpg" 
+                              alt="Игорь Демьяненко продакт-дизайнер" 
+                              width="354"
+                            />
+                            <img class="img-1200"
+                              srcset="
+                                ./images/team1-1200.jpg 1x,
+                                ./images/team1-1200@2x.jpg 2x
+                                " 
+                              src="./images/team1-1200.jpg" 
+                              alt="Игорь Демьяненко продакт-дизайнер" 
+                              width="270"
+                            />
                         </div>
                         <div class="card-team__description">
                             <h3 class="card-team__title">Игорь Демьяненко</h3>
@@ -236,10 +359,36 @@
                                 </li>
                             </ul>
                         </div>
-                        
+                    </li>    
                     <li class="card-team">
                         <div class="img">
-                            <img src="images/img2.jpg" alt="Ольга Репина фронт-энд разработчик" width="270">
+                            <img class="img-450"
+                              srcset="
+                                ./images/team2-480.jpg 1x,
+                                ./images/team2-480@2x.jpg 2x
+                                " 
+                              src="./images/team2-480.jpg" 
+                              alt="Ольга Репина фронт-энд разработчик" 
+                              width="450"
+                            />
+                            <img class="img-768"
+                              srcset="
+                                ./images/team2-768.jpg 1x,
+                                ./images/team2-768@2x.jpg 2x
+                                " 
+                              src="./images/team2-768.jpg" 
+                              alt="Ольга Репина фронт-энд разработчик" 
+                              width="354"
+                            />
+                            <img class="img-1200"
+                              srcset="
+                                ./images/team2-1200.jpg 1x,
+                                ./images/team2-1200@2x.jpg 2x
+                                " 
+                              src="./images/team2-1200.jpg" 
+                              alt="Ольга Репина фронт-энд разработчик" 
+                              width="270"
+                            />
                         </div>
                         <div class="card-team__description">
                             <h3 class="card-team__title">Ольга Репина</h3>
@@ -277,12 +426,37 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
-                        
+                        </div> 
                     </li>
                     <li class="card-team">
                         <div class="img">
-                            <img src="images/img3.jpg" alt="Николай Тарасов маркетолог" width="270">
+                            <img class="img-450"
+                              srcset="
+                                ./images/team3-480.jpg 1x,
+                                ./images/team3-480@2x.jpg 2x
+                                " 
+                              src="./images/team3-480.jpg" 
+                              alt="Николай Тарасов маркетолог" 
+                              width="450"
+                            />
+                            <img class="img-768"
+                              srcset="
+                                ./images/team3-768.jpg 1x,
+                                ./images/team3-768@2x.jpg 2x
+                                " 
+                              src="./images/team3-768.jpg" 
+                              alt="Николай Тарасов маркетолог" 
+                              width="354"
+                            />
+                            <img class="img-1200"
+                              srcset="
+                                ./images/team3-1200.jpg 1x,
+                                ./images/team3-1200@2x.jpg 2x
+                                " 
+                              src="./images/team3-1200.jpg" 
+                              alt="Николай Тарасов маркетолог" 
+                              width="270"
+                            />
                         </div>
                         <div class="card-team__description">
                             <h3 class="card-team__title">Николай Тарасов</h3>
@@ -325,7 +499,33 @@
                     </li>
                     <li class="card-team">
                         <div class="img">
-                            <img src="images/img4.jpg" alt="Михаил Ермаков дизайнер интерфейсов" width="270">
+                            <img class="img-450"
+                              srcset="
+                                ./images/team4-480.jpg 1x,
+                                ./images/team4-480@2x.jpg 2x
+                                " 
+                              src="./images/team4-480.jpg" 
+                              alt="Николай Тарасов маркетолог" 
+                              width="450"
+                            />
+                            <img class="img-768"
+                              srcset="
+                                ./images/team4-768.jpg 1x,
+                                ./images/team4-768@2x.jpg 2x
+                                " 
+                              src="./images/team4-768.jpg" 
+                              alt="Николай Тарасов маркетолог" 
+                              width="354"
+                            />
+                            <img class="img-1200"
+                              srcset="
+                                ./images/team4-1200.jpg 1x,
+                                ./images/team4-1200@2x.jpg 2x
+                                " 
+                              src="./images/team4-1200.jpg" 
+                              alt="Николай Тарасов маркетолог" 
+                              width="270"
+                            />
                         </div>
                         <div class="card-team__description">
                             <h3 class="card-team__title">Михаил Ермаков</h3>
@@ -375,7 +575,7 @@
                 <h2 class="section__title">Постоянные клиенты</h2>
         
                 <ul class="client">
-                    <li>
+                    <li class="client__item">
                         <a href="#" class="client__link">
                             <svg class="icon client--icon">
                                 <use href="./images/symbol-defs.svg#icon-client1"></use>
@@ -383,7 +583,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="client__item">
                         <a href="#" class="client__link">
                             <svg class="icon client--icon">
                                 <use href="./images/symbol-defs.svg#icon-client2"></use>
@@ -391,7 +591,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="client__item">
                         <a href="#" class="client__link">
                             <svg class="icon client--icon">
                                 <use href="./images/symbol-defs.svg#icon-client3"></use>
@@ -399,7 +599,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="client__item">
                         <a href="#" class="client__link">
                             <svg class="icon client--icon">
                                 <use href="./images/symbol-defs.svg#icon-client4"></use>
@@ -407,7 +607,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="client__item">
                         <a href="#" class="client__link">
                             <svg class="icon client--icon">
                                 <use href="./images/symbol-defs.svg#icon-client5"></use>
@@ -415,7 +615,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="client__item">
                         <a href="#" class="client__link">
                             <svg class="icon client--icon">
                                 <use href="./images/symbol-defs.svg#icon-client6"></use>
@@ -508,6 +708,14 @@
                 refs.modal.classList.toggle('is-hidden');
             }
     </script>
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>

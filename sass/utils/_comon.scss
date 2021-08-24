@@ -31,14 +31,29 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px; 
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px; 
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px; 
+  }
 }
 
 .container--footer {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+  
 }
 
 img {
@@ -48,32 +63,62 @@ img {
 }
 
 .section {
-  padding: 94px 0px;
-  max-width: 1600px;
+  padding: 60px 0px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (min-width: 768px) {
+    max-width: 768px; 
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding: 94px 0px; 
+  }
+
   .section__title {
-    margin-bottom: 50px;
-
-    color: $title-text-color;
-
-    font-size: 36px;
+    margin-bottom: 30px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+    color: $title-text-color;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+    
+  
   }
 }
 
 .section--no-padding {
-  padding-top: 0px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0px;
+  }
 }
 
 .section--background {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 
   background-color: $button-background-color;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px; 
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px; 
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px; 
+  }
 }
 
 .section--footer {

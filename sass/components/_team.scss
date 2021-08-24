@@ -1,3 +1,12 @@
 .team {
-  display: flex;
+    display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;;
+  }
 }
