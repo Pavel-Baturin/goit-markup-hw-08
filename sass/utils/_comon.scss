@@ -66,16 +66,12 @@ img {
 
 .section {
   padding: 60px 0px;
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px; 
-  }
+  
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
     padding: 94px 0px; 
   }
 
@@ -109,18 +105,6 @@ img {
   margin-right: auto;
 
   background-color: $button-background-color;
-
-  @media screen and (min-width: 480px) {
-    max-width: 480px; 
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px; 
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px; 
-  }
 }
 
 .section--footer {

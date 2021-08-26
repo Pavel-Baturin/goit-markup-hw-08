@@ -14,6 +14,7 @@
   padding: 48px 40px;
   background-color: $primary-white-color;
   z-index: 999;
+  overflow-y: scroll;
 
   transform: translateY(-300%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -104,4 +105,8 @@
       color: $accent-color;
     }
   }
-}  
+
+  .mobile-menu__link--current {
+    color: $accent-color;
+  }
+} 
