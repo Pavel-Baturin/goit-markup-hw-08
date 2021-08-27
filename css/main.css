@@ -470,6 +470,7 @@ img {
 
 .hero {
   height: 400px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0px;
@@ -486,6 +487,7 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     height: 400px;
+    width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-768.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768.jpg);
     background-size: 768px 400px;
@@ -500,6 +502,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
+    width: 1600px;
     padding: 200px 0px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-1200.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1200.jpg);
